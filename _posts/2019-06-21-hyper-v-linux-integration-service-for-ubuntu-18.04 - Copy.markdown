@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Hyper-V Linux Integration Service for Ubuntu 18.04"
-date:   2019-06-21 09:17:21 +0200
-categories: jekyll update
+date:   2019-06-21
 author: Bas Roovers
 ---
 Linux Integration Services. Linux Integration Services (LIS) is a package of drivers and services that enhance the performance of Linux-based virtual machines on Hyper-V. It enables features like:
