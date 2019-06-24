@@ -5,9 +5,9 @@ date:   2019-06-24
 author: broovers
 image: assets/images/heroes/balance.jpg
 ---
-Although Hyper-V is works flawlessly for our needs. We are still missing out on some features which VMWare has had since 2011. One of which is Storage DRS, abbreviation for Distributed Resource Scheduler. It's a feature that allows you to balance out the storage usage over several datastores.
+Although Hyper-V works flawlessly for our needs. We are still missing out on some features which VMWare has had since 2011. One of which is [Storage DRS](https://kb.vmware.com/s/article/2149938). It's a feature that allows you to balance the storage usage over several datastores.
 
-With Storage DRS missing we need to manually move VM storage to lesser occupied cluster shared volumes. That's something I would rather automate. Luckily [Yusuf Ozturk](http://www.yusufozturk.info/windows-server/hyper-v-storage-drs-start-vmstorageoptimization.html) made a very nice Powershell script to do exactly that. The script was somewhat outdated, but still elegant. With some minor editing I could get it running on our Windows Server 2016 Hyper-V cluster and had immediate success.
+With Storage DRS missing we need to manually move VM storage to lesser occupied cluster shared volumes. That's something I would rather automate. Luckily [Yusuf Ozturk](http://www.yusufozturk.info/windows-server/hyper-v-storage-drs-start-vmstorageoptimization.html) made a very nice Powershell script to do exactly that. The script was somewhat outdated, but still elegant. With some minor editing on my side I could get to run on our Windows Server 2016 Hyper-V cluster and had immediate success.
 
 ![Hyper-V storage balancing result graph](/assets/images/hyper-v-storage-balancing-result-graph.png)
 
