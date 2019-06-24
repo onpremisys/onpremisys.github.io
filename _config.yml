@@ -1,44 +1,66 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Site
+name: "onpremisys"
+title: "onpremisys"
+description: "Sharing thoughts on running an on-premise Microsoft oriented hosting platform."
+logo: 'assets/images/on-prem.png'
+favicon: 'assets/images/on-prem.png'
+baseurl: ''
+url: "https://onpremisys.nl"
+google_analytics: 'UA-142507058-1'
+disqus: 'onpremisys'
+include: ["_pages"]
+permalink: /:title/
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: onpremisys
-description: >- # this means to ignore newlines until "baseurl:"
-  Sharing thoughts on running an on-premise Microsoft oriented hosting platform.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://onpremisys.nl" # the base hostname & protocol for your site, e.g. http://example.com
+# Authors
+authors:
+  broovers:
+    name: Bas Roovers
+    display_name: Bas Roovers
+    avatar: 'assets/images/avatar-broovers.jpg'
+    email: mail@basroovers.nl
+    twitter: https://twitter.com/bas_roovers
+  mvosslamber:
+    name: Marcel Vosslamber
+    display_name: Marcel Vosslamber
+    avatar: 'assets/images/avatar.png'
+    twitter: https://twitter.com/mavel_
 
-disqus:
-  shortname: onpremisys
-
-google_analytics: UA-142507058-1
-
-# Build settings
-markdown: kramdown
-theme: minima
+# Plugins
 plugins:
-  - jekyll-feed
+  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3412143450191416"
+adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]

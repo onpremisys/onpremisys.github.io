@@ -2,7 +2,8 @@
 layout: post
 title:  "Hyper-V Linux Integration Service for Ubuntu 18.04"
 date:   2019-06-21
-author: Bas Roovers
+author: broovers
+image: assets/images/heroes/microsoft-loves-linux.png
 ---
 Linux Integration Services. Linux Integration Services (LIS) is a package of drivers and services that enhance the performance of Linux-based virtual machines on Hyper-V. It enables features like:
 * Graceful Shutdown
@@ -30,5 +31,7 @@ reboot
 {% endhighlight %}
 
 Sources: [Hyper-V Lab](https://hypervlab.co.uk/2019/04/configure-linux-integration-services-on-ubuntu-server-18-04-02-lts/)
+
+For more information on virtualizing Linux workloads in Windows Server see this [Channel 9 video](https://channel9.msdn.com/Series/Virtualizing-Linux-Workloads-in-Windows-Server-2012-R2/02).
 
 [microsoft-docs]: https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/supported-ubuntu-virtual-machines-on-hyper-v
