@@ -15,7 +15,7 @@ First we create a GPO that adds a domain group to the local Administratos group 
 2. Create a new Local Group
 3. Choose as action for Update
 4. In Group name drop down choose: Administrators (build-in)
-5. Click on Add... and fill this in by name: '%DomainName%\Local Admin %ComputerName%' (You can change it to you own desire ofcourse)
+5. Click on Add... and fill this in by name: ```%DomainName%\Local Admin %ComputerName%```
 6. Save the GPO and scope it to the group of machines you want
 
 Now every machine will have a domain group (with the machine name in it) as member of the local Administratos group. But the groups arent in the Active Directory right? Well not yet, with a little bit of PowerShell we create this in a minute, here is the script:
