@@ -3,7 +3,7 @@ layout: post
 title:  "Fail-over SQL Server availability groups via Powershell"
 date:   2019-06-25
 author: broovers
-image: assets/images/heroes/always-on.png
+image: assets/images/heroes/on-air.jpg
 ---
 Using SQL Server's availability groups is a bliss for companies who want to provide redundancy. But things can get pretty tedious when you are not using an Enterprise license and have a lot of databases.
 

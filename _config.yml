@@ -23,7 +23,8 @@ authors:
   mvosslamber:
     name: Marcel Vosslamber
     display_name: Marcel Vosslamber
-    avatar: 'assets/images/avatar.png'
+    avatar: 'assets/images/avatar-mvosslamber.jpg'
+    email: marcel@vosslamber.com
     twitter: https://twitter.com/mavel_
 
 # Plugins
