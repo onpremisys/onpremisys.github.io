@@ -7,7 +7,7 @@ image: assets/images/heroes/useless-gate.jpg
 ---
 There's always a case that some users, or even a complete department need local admin permissions. But how can you control this, and more important, how to do this the right way?
 
-If you've created a domain group and added that group to all the local Administrators group on all machines, then you are doing it wrong! Why? Because you've made everyone local administrator on all of these machines. Handy right? Sure, but they're also able to access all machines' hidden shares. So user A is able to access all drives of user B's laptop. What's the right way I hear you ask? You should add the user of the machine to the local Administratos group of that machine, that's it, simple right? But what if you have hundreds or even thousands of machines? Then you have got something to do coming weekend! Just kidding, here is an easier way.
+If you've created a domain group and added that group to all the local Administrators group on all machines, then you are doing it wrong! Why? Because you've made everyone local administrator on all of these machines. Handy right? Sure, but they're also able to access all machines' hidden shares. So user A is able to access all drives of user B's laptop. What's the right way I hear you ask? You should add the user of the machine to the local Administrators group of that machine, that's it, simple right? But what if you have hundreds or even thousands of machines? Then you have got something to do coming weekend! Just kidding, here is an easier way.
 
 First we create a GPO that adds a domain group to the local Administrators group with the computername in it. You do this as follows:
 
@@ -18,7 +18,7 @@ First we create a GPO that adds a domain group to the local Administrators group
 5. Click on Add... and fill this in by name: ```%DomainName%\Local Admin %ComputerName%```
 6. Save the GPO and scope it to the group of machines you want
 
-Now every machine will have a domain group (with the machine name in it) as member of the local Administratos group. But the groups arent in the Active Directory right? Well not yet, with a little bit of PowerShell we create this in a minute, here is the script:
+Now every machine will have a domain group (with the machine name in it) as member of the local Administrators group. But the groups arent in the Active Directory right? Well not yet, with a little bit of PowerShell we create this in a minute, here is the script:
 
 {% highlight powershell %}
 $searchFilter = "*"
