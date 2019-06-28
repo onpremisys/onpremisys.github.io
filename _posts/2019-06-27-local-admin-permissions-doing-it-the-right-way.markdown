@@ -9,7 +9,7 @@ There's always a case that some users, or even a complete department need local 
 
 If you've created a domain group and added that group to all the local Administrators group on all machines, then you are doing it wrong! Why? Because you've made everyone local administrator on all of these machines. Handy right? Sure, but they're also able to access all machines' hidden shares. So user A is able to access all drives of user B's laptop. What's the right way I hear you ask? You should add the user of the machine to the local Administratos group of that machine, that's it, simple right? But what if you have hundreds or even thousands of machines? Then you have got something to do coming weekend! Just kidding, here is an easier way.
 
-First we create a GPO that adds a domain group to the local Administratos group with the computername in it. You do this as follows:
+First we create a GPO that adds a domain group to the local Administrators group with the computername in it. You do this as follows:
 
 1. Navigate to: Computer Configuration\Preferences\Control Panel Settings\Local Users and Groups\
 2. Create a new Local Group
