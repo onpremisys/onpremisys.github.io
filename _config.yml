@@ -9,7 +9,7 @@ url: "https://onpremisys.nl"
 google_analytics: 'UA-142507058-1'
 disqus: 'onpremisys'
 include: ["_pages"]
-permalink: /:title/
+permalink: /:year/:month/:day/:title
 
 # Authors
 authors:
