@@ -28,8 +28,11 @@ if($certsWithoutKey) {
         Write-Host "Search private key for $($Choice.Thumbprint): " -NoNewline
         $Output = certutil -repairstore my "$($Choice.Thumbprint)"
         
-        $Result = [regex]::match($output, "CertUtil: -repairstore (.*)").Groups[1].Value
-        if($Result -eq 'command completed successfully.') { Write-Host "V" -ForegroundColor Green } else {
+        $Result = [regex]::match($output, "CertUtil: (.*)").Groups[1].Value
+        if($Result -eq '-repairstore command completed successfully.') {
+            Write-Host "V" -ForegroundColor Green
+            
+        } else {
 
             Write-Host $Result -ForegroundColor Red
 
