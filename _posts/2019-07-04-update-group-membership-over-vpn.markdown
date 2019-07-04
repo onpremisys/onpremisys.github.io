@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Updating user group membership over VPN"
-date:   2019-07-03
+date:   2019-07-04
 author: mvosslamber
 image: assets/images/heroes/world-map.jpg
 ---
