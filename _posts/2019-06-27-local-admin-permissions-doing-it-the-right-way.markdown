@@ -4,6 +4,7 @@ title:  "Local admin permissions? Doing it the right way!"
 date:   2019-06-27
 author: mvosslamber
 image: assets/images/heroes/useless-gate.jpg
+redirect_from: /local-admin-permissions-doing-it-the-right-way/
 ---
 There's always a case that some users, or even a complete department need local admin permissions. But how can you control this, and more important, how to do this the right way?
 

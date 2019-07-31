@@ -4,6 +4,7 @@ title:  "Storage balancing for Hyper-V"
 date:   2019-06-24
 author: broovers
 image: assets/images/heroes/balance.jpg
+redirect_from: /storage-balancing-for-hyper-v/
 ---
 Although Hyper-V works flawlessly for our needs. We are still missing out on some features which VMWare has had since 2011. One of which is [Storage DRS](https://kb.vmware.com/s/article/2149938). It's a feature that allows you to balance the storage usage over several datastores.
 
