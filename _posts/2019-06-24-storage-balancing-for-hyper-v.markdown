@@ -199,4 +199,6 @@ param (
 		}
 	}
 }
+
+Start-VMStorageOptimization -DebugMode
 {% endhighlight %}
