@@ -19,7 +19,7 @@ I was able to generate a first version of the module which exports a bunch of me
 
 ![Kemp Loadmaster dashboard in Grafana](/assets/images/kemp_loadmaster_grafana_dashboard.jpg)
 
-I'll describe the steps I've went through to generate the snmp.yml and get the metrics in Prometheus.
+These are the steps I took to generate the snmp.yml and get the metrics in Prometheus.
 
 [See this Github Gist if you just want the snmp.yml.](https://gist.github.com/basroovers/668ec1d55e1b993de90ea14daf056b9b)
 
@@ -89,7 +89,10 @@ services:
 
 Once running the SNMP exporter should expose an endpoint at port 9116.
 You can test it by giving the ip address of hostname of the Kemp Loadmaster and the module in the url like this.
+
+{% highlight %}
 http://127.0.0.1:9116/snmp?target=192.168.1.20&module=kemp_loadmaster
+{% endhighlight %}
 
 ## Step 3: Integrate SNMP exporter in Prometheus
 
