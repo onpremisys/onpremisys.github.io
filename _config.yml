@@ -1,7 +1,7 @@
 # Site
 name: "onpremisys"
 title: "onpremisys"
-description: "Sharing thoughts on running an on-premise Microsoft oriented hosting platform."
+description: "Sharing thoughts on running an on-premise hosting platform."
 logo: 'assets/images/logo/onpremisys.svg'
 favicon: 'assets/images/logo/onpremisys.png'
 baseurl: ''
