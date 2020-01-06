@@ -90,7 +90,7 @@ services:
 Once running the SNMP exporter should expose an endpoint at port 9116.
 You can test it by giving the ip address of hostname of the Kemp Loadmaster and the module in the url like this.
 
-{% highlight %}
+{% highlight yml  %}
 http://127.0.0.1:9116/snmp?target=192.168.1.20&module=kemp_loadmaster
 {% endhighlight %}
 
