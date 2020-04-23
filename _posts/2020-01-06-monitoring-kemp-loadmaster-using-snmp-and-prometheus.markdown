@@ -119,3 +119,5 @@ After testing this you can include the SNMP exporter in your Prometheus stack an
       - target_label: __address__
         replacement: snmp-exporter:9116  # The SNMP exporter's real hostname:port.
 {% endhighlight %}
+
+If you made it this far you deserve a little treat. Here is a [link to my Grafana dashboard](https://grafana.com/grafana/dashboards/12160) you can easily install.
