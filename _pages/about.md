@@ -8,8 +8,15 @@ This blog is being maintained by Bas Roovers and Marcel Vosslamber. We both work
 
 **Bas Roovers**
 
+![](/assets/images/avatar-broovers.jpg){:height="100px" width="100px"}
+
+Author of onpremisys and working in IT for over 10 years. Loves good discussions and new technologies.
 Twitter: [@bas_roovers](https://twitter.com/bas_roovers)
 
 **Marcel Vosslamber**
+
+![](/assets/images/avatar-mvosslamber.jpg){:height="100px" width="100px"}
+
+Working in IT since 2008 and still rocking it as a system administator. Manages and builds Microsoft solutions. Specialized in building and maintaining network components. Always in for new solutions and technologies.
 
 Twitter: [@Mavel_](https://twitter.com/Mavel_)
