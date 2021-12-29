@@ -18,6 +18,8 @@ In practise though, you might find your fail-over cluster with quarantined nodes
 
 ![Fail-over cluster green quarantined node](\assets\images\fail-over-cluster-green-quarantined-node.png)
 
+You can use the following Powershell script to find quarantined nodes and rejoin them.
+
 {% highlight powershell %}
 Write-Host "Find quarantined nodes: " -NoNewline
 $QuarantinedClusterNodes = Get-ClusterNode | Where-Object StatusInformation -eq Quarantined
