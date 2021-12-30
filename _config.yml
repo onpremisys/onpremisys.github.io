@@ -6,7 +6,7 @@ logo: 'assets/images/logo/onpremisys.svg'
 favicon: 'assets/images/logo/onpremisys.png'
 baseurl: ''
 url: "https://onpremisys.nl"
-google_analytics: 'UA-142507058-1'
+google_analytics: 'G-SMD0SLWFJ8'
 disqus: 'onpremisys'
 include: ["_pages"]
 permalink: /:year/:month/:day/:title
