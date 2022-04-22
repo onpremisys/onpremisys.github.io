@@ -18,4 +18,5 @@ group :jekyll_plugins do
     gem 'kramdown'
     gem 'rouge'
     gem 'jekyll-redirect-from'
+    gem 'jekyll-analytics'
 end

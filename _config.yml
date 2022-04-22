@@ -6,7 +6,6 @@ logo: 'assets/images/logo/onpremisys.svg'
 favicon: 'assets/images/logo/onpremisys.png'
 baseurl: ''
 url: "https://onpremisys.nl"
-google_analytics: 'G-SMD0SLWFJ8'
 disqus: 'onpremisys'
 include: ["_pages"]
 permalink: /:year/:month/:day/:title
@@ -67,6 +66,11 @@ kramdown:
 adsense: "disabled"
 adsense-data-ad-client: "ca-pub-3412143450191416"
 adsense-data-ad-slot: "1363087678"
+
+jekyll_analytics:
+  GoogleAnalytics:          # Add, if you want to track with Google Analytics
+    id: G-SMD0SLWFJ8         # Required - replace with your tracking id
+    anonymizeIp: true      # Optional - Default: false - set to true for anonymized tracking
 
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "disabled"
