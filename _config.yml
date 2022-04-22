@@ -28,6 +28,9 @@ authors:
     email: marcel@vosslamber.com
     twitter: https://twitter.com/mavel_
 
+# Whitelist
+whitelist: [jekyll-analytics]
+
 # Plugins
 plugins:
   - jekyll-paginate
@@ -36,6 +39,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
   - jekyll-redirect-from
+  - jekyll-analytics 
     
 # Archives
 jekyll-archives:
